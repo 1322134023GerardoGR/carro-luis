@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Formularios</title>
+	</head>
+		<body>
+			<h3> Formularios </h3>
+			<form action="php/datos.php" method="POST">
+			<label for="folio">Ingresa el folio</label>
+			<input type="text" name="folio" valor=""/>
+			<br/><br/>
+	 		<label for="nombre">Ingresa tu nombre</label>
+			<input type="text" name="nombre" value=" ">
+			<br/><br/>
+    		<label for="edad">Ingresa tu edad</label>
+			<input type="text" name="edad" value=" ">
+			<br/><br/>
+			<label for="contra">Ingresa un password</label>
+			<input type="password" name="contra" value=" ">
+			<br/><br/>
+			<label>Selecciona sexo</label>
+			<input type="radio" name="sexo" value="Masculino" checked="checked"/>
+			<label>Masculino</label>
+			<input type="radio" name="sexo" value="Femenino"/>
+			<label>Femenino</label>
+			<br/><br/>
+			<label>Intereses</label>
+			<input type="checkbox" name="interes[]" value="Deporte"/>
+			<label>Deporte</label>
+			<input type="checkbox" name="interes[]" value="Lectura"/>
+			<label>Lectura</label>
+			<input type="checkbox" name="interes[]" value="Descanso"/>
+			<label>Descanso</label>
+			<br/><br/>
+			<label for="carrera">Carrera que cursa</label>
+			<select id= "carrera" name="carrera">
+			<option value=" " selected="selected">Selecciona opción</option>
+			<option value="Ing. en Software">Ing. en software</option>
+			<option value="Lic. en Negocios internacionales">Lic. negocios internacionales</option>
+			<option value="Ing. en Mecatrónica">Ing. mecatrónica</option>
+			<option value="Ing. en Finanzas">Ing. en finanzas</option>
+			</select>	
+			<br/><br/>
+			<label for="adicional">Información adicional</label>
+			<br/>
+			<textarea id="adicional" name="adicional" cols="40" rows="5"></textarea>
+			<br/><br/>
+		    <input type="submit" value="Enviar"/>
+		    </form>
+		</body>
+</html>
+
